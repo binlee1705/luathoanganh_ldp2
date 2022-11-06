@@ -93,6 +93,10 @@ $(document).ready(function () {
     $(".tvmp").each(function () {
         animationChar($(this))
     })
+
+    $("#gallery .wrp .group").each(function () {
+        $(this).owlCarousel(owlslide($(this).find('>*').length, [0, 0, 0, 0, 0, 0], true, true, true, [1, 1, 1, 1, 1], "", ""));
+    });
 });
 
 function animationChar(ele, animationIn = "in", animationOut = "out", split = 1) {
