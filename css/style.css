@@ -1440,6 +1440,17 @@ body {
   top: 15.95px;
   left: -178px;
 }
+.shape.shape-9 {
+  width: 261.223px;
+  height: 239.533px;
+  top: 227.497px;
+  left: 538.681px;
+  transform: rotate(52deg);
+  -webkit-transform: rotate(52deg);
+  opacity: 0.3;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 70px;
+}
 
 #header {
   position: relative;
