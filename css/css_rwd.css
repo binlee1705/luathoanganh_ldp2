@@ -169,19 +169,26 @@
     padding: 20px 10px;
   }
   #contact .wrp .left .price {
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
   }
   #contact .wrp .left .price .pRight {
-    margin-bottom: 20px;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
     padding-left: 0;
   }
   #contact .wrp .left .price .pRight .newPrice {
     font-size: 20px;
+  }
+  #contact .wrp .left .price .pRight .oldPrice {
+    margin-left: 10px;
+  }
+  #contact .wrp .left .price .pLeft {
+    width: 180px;
+  }
+  #contact .wrp .left .price .pLeft .cownDown li {
+    width: 40px;
+    line-height: 40px;
+    flex: none;
+    font-size: 16px;
   }
   #contact .wrp .right {
     margin-top: 40px;

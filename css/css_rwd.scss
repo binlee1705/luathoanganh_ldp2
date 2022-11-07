@@ -229,18 +229,28 @@
         .office {
           padding: 20px 10px;
         }
+
         .price {
-          flex-direction: column-reverse;
-          justify-content: center;
-          align-items: center;
+          justify-content: space-between;
+          margin-top: 20px;
           .pRight {
-            margin-bottom: 20px;
-            flex-direction: row;
-            align-items: center;
-            gap: 10px;
             padding-left: 0;
             .newPrice {
               font-size: 20px;
+            }
+            .oldPrice {
+              margin-left: 10px;
+            }
+          }
+          .pLeft {
+            width: 180px;
+            .cownDown {
+              li {
+                width: 40px;
+                line-height: 40px;
+                flex: none;
+                font-size: 16px;
+              }
             }
           }
         }
