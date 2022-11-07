@@ -169,8 +169,10 @@
     padding: 20px 10px;
   }
   #contact .wrp .left .price {
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 20px;
+    align-items: flex-end;
+    gap: 15px;
   }
   #contact .wrp .left .price .pRight {
     padding-left: 0;

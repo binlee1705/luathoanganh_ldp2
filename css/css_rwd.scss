@@ -231,8 +231,10 @@
         }
 
         .price {
-          justify-content: space-between;
+          justify-content: center;
           margin-top: 20px;
+          align-items: flex-end;
+          gap: 15px;
           .pRight {
             padding-left: 0;
             .newPrice {
