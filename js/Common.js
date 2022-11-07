@@ -91,7 +91,7 @@ $(document).ready(function () {
         });
     }, 2000);
     $(".tvmp").each(function () {
-        animationChar($(this))
+        animationChar($(this).find(".text"))
     })
 
     $("#gallery .wrp .group").each(function () {

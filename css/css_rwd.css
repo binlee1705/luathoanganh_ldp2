@@ -1,216 +1,191 @@
 @media (max-width: 1199px) {
-  .shape {
-    display: none;
+  .wrp {
+    width: calc(100% - 40px);
   }
 }
 @media (max-width: 991px) {
   .wrp {
     width: calc(100% - 20px);
+    max-width: 960px;
   }
-  #whyAboutUs {
-    background: rgb(13, 13, 132);
+  #header .wrp .title span {
+    font-size: 60px;
   }
-  #whyAboutUs:before {
-    display: none;
-    width: 100%;
+  #whyAboutUs .des {
+    margin-bottom: 70px;
   }
-  #whyAboutUs .wrp {
-    padding: 50px 30px;
-    flex-wrap: wrap;
+  #whyAboutUs .group .left {
+    width: 250px;
   }
-  #whyAboutUs .wrp .left {
-    width: 100%;
-  }
-  #whyAboutUs .wrp .right {
-    margin-top: 70px;
-    margin-bottom: 0;
-    flex: none;
-    padding-left: 0px;
-    gap: 20px;
-    width: 100%;
-  }
-  #whyAboutUs .wrp .right .item {
-    width: calc((100% - 20px) / 2);
-    margin-bottom: 30px;
-    min-height: auto;
-  }
-  #workProcess {
-    padding-top: 60px;
-  }
-  #workProcess .wrp {
-    width: calc(100% - 20px);
-  }
-  #staff:after {
-    width: 100%;
-    border-radius: 0;
-  }
-  #contact:after {
-    width: 100%;
-    border-radius: 0;
-  }
-  #contact .wrp .right {
+  #whyAboutUs .group .right {
+    flex: 1;
     padding-left: 20px;
   }
+  #whyAboutUs .group .right > .item {
+    width: calc((100% - 20px) / 2);
+  }
+  #whyAboutUs .group .right .lstBtn {
+    left: 30px;
+  }
+  #workProcess {
+    margin-top: 70px;
+  }
+  #staff .wrp .group {
+    gap: 40px;
+  }
+  #staff .wrp .group .item {
+    width: calc((100% - 40px) / 2);
+  }
+  #promise .wrp .group {
+    padding: 0 20px;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
   #promise .wrp .group .item {
-    flex: auto;
+    width: calc((100% - 40px) / 2);
+    flex: none;
+  }
+  #contact .wrp .right {
+    width: 340px;
+  }
+  #contact .wrp .left .cmTitle .title {
+    font-size: 25px;
+  }
+  #contact .wrp .left .price .pRight {
+    padding-left: 20px;
+  }
+  #contact .wrp .left .price .pRight .newPrice {
+    font-size: 25px;
+    padding: 5px 25px;
+  }
+  #contact .wrp .left .price .pLeft .cownDown li {
+    line-height: 45px;
   }
 }
 @media (max-width: 767px) {
-  #header {
-    overflow: hidden;
-    border-radius: 0;
-    padding-bottom: 0;
-  }
-  #header .wrp {
-    flex-wrap: wrap;
-  }
-  #header .wrp .left {
-    width: 100%;
-  }
-  #header .wrp .left .title .top .text {
-    font-size: 40px;
-  }
-  #header .wrp .left .title .bot .text {
+  #header .wrp .title span {
     font-size: 30px;
   }
-  #header .wrp .left .des {
-    margin-bottom: 30px;
+  #header .wrp .afterTitle .text {
+    font-size: 14px;
+    margin-left: 0;
   }
-  #header .wrp .left .lstBtn {
-    justify-content: center;
+  #header .wrp .des {
+    font-size: 14px;
   }
-  #header .wrp .right {
-    width: 100%;
-    margin-top: 20px;
-  }
-  #header .wrp .right .bgRight .wImage {
-    width: 100%;
-  }
-  #whyAboutUs {
-    border-bottom-right-radius: 50px;
+  #header .wrp .lstBtn {
+    margin-top: 30px;
   }
   #whyAboutUs .wrp {
     padding-left: 0;
     padding-right: 0;
   }
-  #whyAboutUs .wrp .left .title > span {
-    font-size: 30px;
+  #whyAboutUs .wrp .title {
+    font-size: 22px;
   }
-  #whyAboutUs .wrp .left .des {
-    margin-bottom: 0;
+  #whyAboutUs .wrp .des {
+    margin-bottom: 40px;
   }
-  #whyAboutUs .wrp .right .item {
+  #whyAboutUs .wrp .group {
+    flex-direction: column;
+  }
+  #whyAboutUs .wrp .group .left {
     width: 100%;
+    margin-bottom: 30px;
   }
-  #whyAboutUs .wrp .lstBtn.dbmobile-l {
-    display: flex !important;
+  #whyAboutUs .wrp .group .right {
+    flex: none;
     width: 100%;
+    padding: 0;
+    flex-direction: column;
+  }
+  #whyAboutUs .wrp .group .right > .item {
+    width: 100%;
+    margin-top: 20px;
+  }
+  #whyAboutUs .wrp .group .lstBtn {
+    position: static;
     justify-content: center;
-  }
-  #workProcess {
-    padding-top: 40px;
+    width: 100%;
   }
   #workProcess .wrp .title {
-    font-size: 30px;
-    margin-bottom: 20px;
+    font-size: 24px;
+    height: 100px;
   }
   #workProcess .wrp .group {
-    margin-bottom: -20px;
-    border-radius: 0;
-    flex-direction: column;
+    padding: 20px;
   }
-  #workProcess .wrp .group .left,
-#workProcess .wrp .group .right {
-    border-radius: 30px;
+  #workProcess .wrp .group .item .num {
+    font-size: 16px;
+    width: 35px;
+    height: 35px;
+  }
+  #workProcess .wrp .group .item .text {
+    line-height: 1.4;
+    padding-left: 8px;
+    margin-top: -3px;
+  }
+  #staff .wrp .group .item {
     width: 100%;
-    flex: none;
+    margin-bottom: 70px;
   }
-  #staff {
-    padding: 40px 0;
+  #staff .wrp .group .item:last-child {
+    margin-bottom: 0;
   }
-  #staff .wrp {
-    width: 100%;
-  }
-  #staff .wrp .title {
-    font-size: 30px;
-    margin-bottom: 20px;
-  }
-  #staff .wrp .group {
-    margin-top: 0;
-  }
-  #staff .wrp .group .item .content {
-    padding-top: 10px;
-    flex-direction: column;
-  }
-  #staff .wrp .group .item .content .wImage {
-    width: 130px;
-  }
-  #staff .wrp .group .item .content .info {
-    margin-top: -60px;
-    padding-top: 70px;
-    width: 100%;
-    border-radius: 8px;
-  }
-  #staff .wrp .group .item .content .info .list li {
-    font-size: 14px;
+  #promise {
+    padding-top: 40px;
   }
   #promise .wrp .title {
-    font-size: 27px;
+    font-size: 25px;
   }
   #promise .wrp .group {
-    padding: 20px 0;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
+    gap: 15px;
   }
   #promise .wrp .group .item {
-    padding-left: 10px;
-    padding-right: 10px;
-    align-items: flex-start;
-    border: none;
-    width: 50%;
-  }
-  #promise .wrp .group .item .top .num {
-    font-size: 35px;
-  }
-  #promise .wrp .group .item .content {
     width: 100%;
-    text-align: center;
+  }
+  #gallery {
+    padding-top: 20px;
+  }
+  #gallery .wrp {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  #gallery .wrp .group {
+    width: calc((100% - 20px) / 2);
   }
   #contact {
     padding: 30px 0;
   }
   #contact .wrp {
-    flex-direction: column-reverse;
-  }
-  #contact .wrp .left,
-#contact .wrp .right {
-    width: 100%;
-  }
-  #contact .wrp .right {
-    padding: 0;
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  #contact .wrp .right .rpTop {
-    display: flex;
     flex-direction: column;
+  }
+  #contact .wrp .left {
+    padding: 0;
+    width: 100%;
+    flex: none;
+  }
+  #contact .wrp .left .office {
+    padding: 20px 10px;
+  }
+  #contact .wrp .left .price {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  #contact .wrp .left .price .pRight {
     margin-bottom: 20px;
-  }
-  #contact .wrp .right .price {
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-  #contact .wrp .right .price .pRight {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
     padding-left: 0;
   }
-  #contact .wrp .right .price .pLeft {
-    width: 180px;
+  #contact .wrp .left .price .pRight .newPrice {
+    font-size: 20px;
   }
-  #contact .wrp .right .price .pLeft .cownDown li {
-    width: 40px;
-    line-height: 40px;
+  #contact .wrp .right {
+    margin-top: 40px;
     flex: none;
-    font-size: 16px;
+    width: 100%;
   }
 }/*# sourceMappingURL=css_rwd.css.map */

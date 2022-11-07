@@ -1,4 +1,34 @@
 @charset "UTF-8";
+#gallery .wrp .group .owl-nav .owl-prev,
+#gallery .wrp .group .owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+  font-size: 35px;
+}
+#gallery .wrp .group .owl-nav .owl-prev:before,
+#gallery .wrp .group .owl-nav .owl-next:before {
+  font-family: "FontAwesome";
+  font-weight: 300;
+  content: "\f053";
+}
+#gallery .wrp .group .owl-nav .owl-next.owl-next {
+  left: auto;
+  right: 5px;
+}
+#gallery .wrp .group .owl-nav .owl-next.owl-next:before {
+  content: "\f054";
+}
+#gallery .wrp .group .owl-nav .owl-prev:hover,
+#gallery .wrp .group .owl-nav .owl-next:hover {
+  color: #fff;
+}
+
 .noidung {
   width: 100%;
   min-height: 100px;
@@ -1286,36 +1316,40 @@ body {
 }
 .lstBtn .itemBtn {
   display: inline-flex;
-  color: rgb(250, 250, 250);
   font-size: 14px;
   font-weight: bold;
   text-align: center;
   line-height: 1.6;
-  width: 187px;
-  height: 45px;
-  border-style: solid;
-  border-color: rgb(255, 255, 255);
-  border-width: 1px;
-  border-radius: 5px;
+  height: 40px;
   margin-right: 20px;
   align-items: center;
-  justify-content: center;
-}
-.lstBtn .itemBtn.active {
-  background-color: rgb(255, 203, 119);
-  color: rgb(36, 36, 36);
-  border-color: rgb(255, 203, 119);
-}
-.lstBtn .itemBtn span.in {
-  -webkit-animation: ah-rotate-3-in 0.6s forwards;
-  animation: ah-rotate-3-in 0.6s forwards;
-}
-.lstBtn .itemBtn span.out {
-  -webkit-animation: ah-rotate-3-out 0.6s forwards;
-  animation: ah-rotate-3-out 0.6s forwards;
+  justify-content: space-between;
+  background: rgb(244, 191, 109);
+  background: linear-gradient(90deg, rgb(244, 191, 109), rgb(255, 249, 201));
+  color: rgb(11, 2, 61);
+  border-radius: 20px;
 }
 .lstBtn .itemBtn:last-child {
   margin-right: 0;
+}
+.lstBtn .itemBtn .icon {
+  width: 40px;
+  height: 40px;
+}
+.lstBtn .itemBtn .text {
+  padding-left: 15px;
+  padding-right: 40px;
+}
+.lstBtn .itemBtn .text span.item {
+  display: inline-block;
+}
+.lstBtn .itemBtn .text span.item.in {
+  -webkit-animation: ah-rotate-3-in 0.6s forwards;
+  animation: ah-rotate-3-in 0.6s forwards;
+}
+.lstBtn .itemBtn .text span.item.out {
+  -webkit-animation: ah-rotate-3-out 0.6s forwards;
+  animation: ah-rotate-3-out 0.6s forwards;
 }
 
 .dn {
@@ -1348,7 +1382,65 @@ body {
   transition: 2s 1s all linear;
   pointer-events: none;
   position: absolute;
+  z-index: -1;
 }
+.shape.shape-1 {
+  width: 73.5px;
+  height: 73.5px;
+  top: 50.872px;
+  left: -45.5px;
+}
+.shape.shape-2 {
+  width: 193px;
+  height: 193px;
+  top: 319.933px;
+  left: -278.5px;
+}
+.shape.shape-3 {
+  width: 388px;
+  height: 388px;
+  top: -262.451px;
+  left: 979px;
+}
+.shape.shape-4 {
+  width: 421.534px;
+  height: 386.533px;
+  top: -99.718px;
+  left: -390.319px;
+  transform: rotate(52deg);
+  -webkit-transform: rotate(52deg);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 70px;
+}
+.shape.shape-5 {
+  width: 474.39px;
+  height: 435px;
+  top: -278.487px;
+  left: 977.99px;
+  transform: rotate(28deg);
+  -webkit-transform: rotate(28deg);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 70px;
+}
+.shape.shape-6 {
+  width: 388px;
+  height: 388px;
+  top: -117.65px;
+  left: -357.96px;
+}
+.shape.shape-7 {
+  width: 411.85px;
+  height: 411.85px;
+  top: -240.05px;
+  left: 1013px;
+}
+.shape.shape-8 {
+  width: 240px;
+  height: 240px;
+  top: 15.95px;
+  left: -178px;
+}
+
 #header {
   position: relative;
   background-size: cover;
@@ -1441,6 +1533,10 @@ body {
   width: 24px;
   height: 24px;
   display: inline-block;
+  margin-left: -12px;
+}
+#header .wrp .afterTitle .text {
+  margin-left: 5px;
 }
 #header .wrp .des {
   color: rgb(255, 255, 255);
@@ -1451,6 +1547,15 @@ body {
 #header .wrp .lstBtn {
   margin-top: 50px;
   justify-content: center;
+}
+#header .wrp .scrollDown {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 20px 0;
+}
+#header .wrp .scrollDown .icon {
+  width: 35px;
+  height: 35px;
 }
 
 #whyAboutUs .wrp {
@@ -1480,9 +1585,11 @@ body {
   width: 537px;
   max-width: 100%;
   margin-bottom: 95px;
+  max-width: 100%;
 }
 #whyAboutUs .group {
   display: flex;
+  width: 100%;
   align-items: flex-start;
 }
 #whyAboutUs .group .left {
@@ -1547,7 +1654,6 @@ body {
 
 #workProcess {
   border-radius: 15px;
-  overflow: hidden;
   margin-top: 125px;
   margin-bottom: 110px;
 }
@@ -1614,16 +1720,38 @@ body {
   line-height: 1.2;
   flex-wrap: wrap;
 }
+#workProcess .lstBtn {
+  justify-content: center;
+}
 
 #staff {
   padding-bottom: 45px;
+  background-image: url(../pic/bgStaff.jpg);
+  background-position: left top;
+  background-repeat: no-repeat;
+  position: relative;
 }
-#staff .group {
+#staff:after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(11, 2, 61, 0.9);
+  background: radial-gradient(circle, rgba(11, 2, 61, 0.9), rgb(11, 2, 61));
+}
+#staff .wrp {
+  position: relative;
+  z-index: 2;
+}
+#staff .wrp .group {
   display: flex;
   flex-wrap: wrap;
   gap: 80px;
 }
-#staff .group .item {
+#staff .wrp .group .item {
   width: calc((100% - 80px) / 2);
   background-color: rgb(255, 255, 255);
   border-style: solid;
@@ -1633,7 +1761,7 @@ body {
   position: relative;
   padding-top: 80px;
 }
-#staff .group .item .wImage {
+#staff .wrp .group .item .wImage {
   position: absolute;
   left: 50%;
   top: 0;
@@ -1644,10 +1772,10 @@ body {
   background: rgb(255, 249, 201);
   background: linear-gradient(180deg, rgb(255, 249, 201), rgb(244, 191, 109));
 }
-#staff .group .item .wImage:before {
+#staff .wrp .group .item .wImage:before {
   padding-bottom: 100%;
 }
-#staff .group .item .wImage > a.image {
+#staff .wrp .group .item .wImage > a.image {
   width: calc(100% - 14px);
   height: calc(100% - 14px);
   border-radius: 50%;
@@ -1655,10 +1783,10 @@ body {
   top: 7px;
   left: 7px;
 }
-#staff .group .item .info {
+#staff .wrp .group .item .info {
   padding: 0 35px 20px 35px;
 }
-#staff .group .item .info .name {
+#staff .wrp .group .item .info .name {
   color: rgb(41, 45, 64);
   font-size: 30px;
   font-weight: bold;
@@ -1666,7 +1794,7 @@ body {
   line-height: 1;
   text-transform: uppercase;
 }
-#staff .group .item .info .job {
+#staff .wrp .group .item .info .job {
   color: rgb(220, 151, 81);
   font-size: 16px;
   font-weight: bold;
@@ -1676,19 +1804,19 @@ body {
   padding-bottom: 3px;
   border-bottom: 1px solid rgba(39, 41, 54, 0.1);
 }
-#staff .group .item .info .list {
+#staff .wrp .group .item .info .list {
   list-style: none;
   margin: 0;
   padding: 0;
   margin-top: 15px;
 }
-#staff .group .item .info .list li {
+#staff .wrp .group .item .info .list li {
   padding-bottom: 7px;
   position: relative;
   counter-increment: linum;
   text-transform: uppercase;
 }
-#staff .group .item .info .list li:before {
+#staff .wrp .group .item .info .list li:before {
   content: "";
   background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22100%25%22%20height%3D%22100%25%22%20%20viewBox%3D%220%200%201792%201896.0833%22%20fill%3D%22rgba(36%2C%2036%2C%2036%2C%201.0)%22%3E%20%3Cpath%20d%3D%22M1671%20566q0%2040-28%2068l-724%20724-136%20136q-28%2028-68%2028t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28%2068-28t68%2028l294%20295%20656-657q28-28%2068-28t68%2028l136%20136q28%2028%2028%2068z%22%3E%3C%2Fpath%3E%20%3C%2Fsvg%3E");
   width: 15px;
@@ -1796,6 +1924,12 @@ body {
 #gallery .wrp .group .wImage:before {
   padding-bottom: 177.5423728814%;
 }
+#gallery .wrp .group .owl-nav {
+  display: none;
+}
+#gallery .wrp .group:hover .owl-nav {
+  display: block;
+}
 
 #contact {
   margin-top: 40px;
@@ -1818,6 +1952,7 @@ body {
   position: relative;
   z-index: 2;
   display: flex;
+  align-items: flex-end;
 }
 #contact .wrp .right {
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -1882,7 +2017,12 @@ body {
 #contact .wrp .left .wImage::before {
   padding-bottom: 49.63%;
 }
-#contact .wrp .left .title {
+#contact .wrp .left .cmTitle {
+  padding-left: 18px;
+  padding-top: 18px;
+  position: relative;
+}
+#contact .wrp .left .cmTitle .title {
   font-family: "Paytone One", sans-serif;
   color: rgb(255, 255, 255);
   font-size: 30px;
@@ -1894,7 +2034,7 @@ body {
   padding-bottom: 10px;
   position: relative;
 }
-#contact .wrp .left .title:after {
+#contact .wrp .left .cmTitle .title:after {
   content: "";
   width: 106px;
   position: absolute;
@@ -1902,6 +2042,16 @@ body {
   height: 1px;
   display: block;
   bottom: 0;
+  left: 0;
+}
+#contact .wrp .left .cmTitle .icon {
+  pointer-events: none;
+  transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 0;
   left: 0;
 }
 #contact .wrp .left .des {
@@ -1913,6 +2063,7 @@ body {
   margin-top: 35px;
   display: flex;
   align-items: flex-end;
+  justify-content: center;
 }
 #contact .wrp .left .price .pLeft {
   width: 225px;
@@ -1978,4 +2129,51 @@ body {
   background: rgb(244, 191, 109);
   background: linear-gradient(90deg, rgb(244, 191, 109), rgb(255, 248, 201));
   border-radius: 74px;
+}
+#contact .wrp .left .office {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: rgba(253, 251, 251, 0);
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+  border-width: 1px;
+}
+#contact .wrp .left .office .item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+#contact .wrp .left .office .item:last-child {
+  margin-bottom: 0;
+}
+#contact .wrp .left .office .item .num {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgb(244, 191, 109);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(36, 36, 36);
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+}
+#contact .wrp .left .office .item .info {
+  flex: 1;
+  padding-left: 15px;
+}
+#contact .wrp .left .office .item .info .name {
+  font-weight: 700;
+  color: rgb(244, 191, 109);
+  font-size: 16px;
+  line-height: 1.6;
+}
+#contact .wrp .left .office .item .info .addr {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  line-height: 1.6;
+}
+#contact .wrp .left .office .item:nth-child(2) .num {
+  background: rgb(255, 248, 201);
 }/*# sourceMappingURL=style.css.map */
