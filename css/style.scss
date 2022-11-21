@@ -998,3 +998,180 @@ body {
     }
   }
 }
+#profile {
+  padding: 90px 0;
+  .title {
+    height: 176px;
+    background: url(../pic/bgHSNL.png) center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-transform: uppercase;
+    font-family: "Paytone One", sans-serif;
+    color: rgb(255, 248, 201);
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+  .content {
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    .name {
+      font-size: 20px;
+      color: #fff8c9;
+      font-weight: bold;
+      font-family: "Montserrat", sans-serif;
+      margin-bottom: 25px;
+      text-align: center;
+      position: relative;
+      padding-bottom: 15px;
+      &:after {
+        content: "";
+        height: 1px;
+        width: 95px;
+        background: rgba(255, 255, 255, 0.4);
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+        bottom: 0;
+      }
+    }
+    .left {
+      width: 656px;
+      .group {
+        position: relative;
+        .imageRegis {
+          display: block;
+          width: 100%;
+        }
+        .btnExpand {
+          position: absolute;
+          bottom: 8px;
+          right: 12px;
+          padding: 6px;
+          background: rgba(255, 255, 255, 0.9);
+          display: inline-block;
+          font-size: 25px;
+          cursor: pointer;
+          &:hover {
+            background: rgba(255, 255, 255, 1);
+          }
+        }
+      }
+      .btnDownloadProfile {
+        display: block;
+        margin-top: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #040164;
+        font-size: 25px;
+        border-radius: 100px;
+        background: #ffcb77;
+        padding: 17px 0 15px 0;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+        transition: 0.3s all ease-in-out;
+        .text {
+          margin-left: 10px;
+        }
+        .icon {
+          img {
+            display: block;
+          }
+        }
+        &:hover {
+          filter: brightness(120%);
+        }
+      }
+    }
+    .right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 218px;
+      .group {
+        overflow: hidden;
+        height: 600px;
+        .wImage {
+          border-radius: 7px;
+          overflow: hidden;
+          margin-bottom: 20px;
+          &::before {
+            padding-bottom: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+#project {
+  position: relative;
+  padding-top: 50px;
+  &:after {
+    content: "";
+    display: block;
+    background: rgba(1, 1, 232, 0.1);
+    background: -webkit-linear-gradient(
+      180deg,
+      rgba(1, 1, 232, 0.1),
+      rgba(234, 237, 238, 0)
+    );
+    background: linear-gradient(
+      180deg,
+      rgba(1, 1, 232, 0.1),
+      rgba(234, 237, 238, 0)
+    );
+    opacity: 0.3;
+    border-top-left-radius: 175px;
+    height: 100%;
+    width: 85%;
+    top: 0;
+    right: 0;
+    position: absolute;
+  }
+  .wrp {
+    padding-bottom: 120px;
+    .title {
+      text-transform: uppercase;
+      color: rgb(13, 13, 132);
+      text-align: center;
+      margin-bottom: 40px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 36px;
+      font-weight: bold;
+      line-height: 1.4;
+      -webkit-text-stroke-width: 0px;
+    }
+    .group {
+      .wImage {
+        &::before {
+          padding-bottom: wImage(198, 323);
+        }
+        margin-bottom: 15px;
+      }
+      .name {
+        font-family: "Montserrat", sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 23px;
+        &:hover {
+          color: rgb(13, 13, 132);
+        }
+      }
+      .owl-dots {
+        margin-top: 20px;
+        @extend %owl-dots;
+      }
+    }
+  }
+}

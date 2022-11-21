@@ -1,4 +1,23 @@
 @charset "UTF-8";
+#project .wrp .group .owl-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.625rem;
+  width: 100%;
+}
+#project .wrp .group .owl-dots .owl-dot {
+  width: 0.625rem;
+  height: 0.625rem;
+  background: #ccc;
+  border-radius: 50%;
+  display: block;
+  margin: 0 0.3125rem;
+}
+#project .wrp .group .owl-dots .owl-dot.active {
+  background: #0c4bab;
+}
+
 #gallery .wrp .group .owl-nav .owl-prev,
 #gallery .wrp .group .owl-nav .owl-next {
   position: absolute;
@@ -2192,4 +2211,168 @@ body {
 }
 #contact .wrp .left .office .item:nth-child(2) .num {
   background: rgb(255, 248, 201);
+}
+
+#profile {
+  padding: 90px 0;
+}
+#profile .title {
+  height: 176px;
+  background: url(../pic/bgHSNL.png) center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-transform: uppercase;
+  font-family: "Paytone One", sans-serif;
+  color: rgb(255, 248, 201);
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+#profile .content {
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+}
+#profile .content .name {
+  font-size: 20px;
+  color: #fff8c9;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 25px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 15px;
+}
+#profile .content .name:after {
+  content: "";
+  height: 1px;
+  width: 95px;
+  background: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  bottom: 0;
+}
+#profile .content .left {
+  width: 656px;
+}
+#profile .content .left .group {
+  position: relative;
+}
+#profile .content .left .group .imageRegis {
+  display: block;
+  width: 100%;
+}
+#profile .content .left .group .btnExpand {
+  position: absolute;
+  bottom: 8px;
+  right: 12px;
+  padding: 6px;
+  background: rgba(255, 255, 255, 0.9);
+  display: inline-block;
+  font-size: 25px;
+  cursor: pointer;
+}
+#profile .content .left .group .btnExpand:hover {
+  background: rgb(255, 255, 255);
+}
+#profile .content .left .btnDownloadProfile {
+  display: block;
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #040164;
+  font-size: 25px;
+  border-radius: 100px;
+  background: #ffcb77;
+  padding: 17px 0 15px 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  transition: 0.3s all ease-in-out;
+}
+#profile .content .left .btnDownloadProfile .text {
+  margin-left: 10px;
+}
+#profile .content .left .btnDownloadProfile .icon img {
+  display: block;
+}
+#profile .content .left .btnDownloadProfile:hover {
+  filter: brightness(120%);
+}
+#profile .content .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 218px;
+}
+#profile .content .right .group {
+  overflow: hidden;
+  height: 600px;
+}
+#profile .content .right .group .wImage {
+  border-radius: 7px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+#profile .content .right .group .wImage::before {
+  padding-bottom: 100%;
+}
+
+#project {
+  position: relative;
+  padding-top: 50px;
+}
+#project:after {
+  content: "";
+  display: block;
+  background: rgba(1, 1, 232, 0.1);
+  background: linear-gradient(180deg, rgba(1, 1, 232, 0.1), rgba(234, 237, 238, 0));
+  opacity: 0.3;
+  border-top-left-radius: 175px;
+  height: 100%;
+  width: 85%;
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+#project .wrp {
+  padding-bottom: 120px;
+}
+#project .wrp .title {
+  text-transform: uppercase;
+  color: rgb(13, 13, 132);
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.4;
+  -webkit-text-stroke-width: 0px;
+}
+#project .wrp .group .wImage {
+  margin-bottom: 15px;
+}
+#project .wrp .group .wImage::before {
+  padding-bottom: 61.3003095975%;
+}
+#project .wrp .group .name {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 23px;
+}
+#project .wrp .group .name:hover {
+  color: rgb(13, 13, 132);
+}
+#project .wrp .group .owl-dots {
+  margin-top: 20px;
 }/*# sourceMappingURL=style.css.map */

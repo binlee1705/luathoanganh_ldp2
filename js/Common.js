@@ -97,6 +97,16 @@ $(document).ready(function () {
     $("#gallery .wrp .group").each(function () {
         $(this).owlCarousel(owlslide($(this).find('>*').length, [0, 0, 0, 0, 0, 0], true, true, true, [1, 1, 1, 1, 1], "", ""));
     });
+
+    $('#profile .right .group').marquee({
+        duration: 15000,
+        gap: 0,
+        delayBeforeStart: 0,
+        direction: 'up',
+        duplicated: true,
+        startVisible: true,
+        pauseOnHover: true
+    });
 });
 
 function animationChar(ele, animationIn = "in", animationOut = "out", split = 1) {
