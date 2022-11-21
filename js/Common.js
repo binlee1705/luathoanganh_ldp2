@@ -97,6 +97,9 @@ $(document).ready(function () {
     $("#gallery .wrp .group").each(function () {
         $(this).owlCarousel(owlslide($(this).find('>*').length, [0, 0, 0, 0, 0, 0], true, true, true, [1, 1, 1, 1, 1], "", ""));
     });
+    $("#project .group").each(function () {
+        $(this).owlCarousel(owlslide($(this).find('>*').length, [20, 20, 20, 20, 20, 10], true, true, true, [3, 3, 3, 3, 1], "", ""));
+    });
 
     $('#profile .right .group').marquee({
         duration: 15000,

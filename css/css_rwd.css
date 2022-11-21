@@ -2,6 +2,13 @@
   .wrp {
     width: calc(100% - 40px);
   }
+  #profile .wrp .left {
+    flex: 1;
+    padding-right: 40px;
+  }
+  #profile .wrp .right .group {
+    height: 760px !important;
+  }
 }
 @media (max-width: 991px) {
   .wrp {
@@ -60,6 +67,12 @@
   }
   #contact .wrp .left .price .pLeft .cownDown li {
     line-height: 45px;
+  }
+  #profile .wrp .left {
+    padding-right: 20px;
+  }
+  #profile .wrp .right .group {
+    height: 530px !important;
   }
 }
 @media (max-width: 767px) {
@@ -196,5 +209,53 @@
     margin-top: 40px;
     flex: none;
     width: 100%;
+  }
+  #profile .wrp .right .group {
+    height: 600px !important;
+  }
+}
+@media (max-width: 479px) {
+  #profile {
+    padding: 50px 0;
+  }
+  #profile .wrp .title {
+    font-size: 25px;
+    height: 100px;
+  }
+  #profile .wrp .content {
+    flex-direction: column;
+  }
+  #profile .wrp .content .left {
+    width: 100%;
+    padding: 0;
+    flex: none;
+    margin-bottom: 30px;
+  }
+  #profile .wrp .content .left .btnDownloadProfile {
+    margin-top: 30px;
+    font-size: 20px;
+    padding: 12px 0;
+  }
+  #profile .wrp .content .left .btnDownloadProfile .icon img {
+    height: 24px;
+  }
+  #profile .wrp .content .right {
+    width: 100%;
+  }
+  #profile .wrp .content .right .group {
+    height: 600px !important;
+  }
+  #project {
+    padding-top: 30px;
+  }
+  #project .wrp {
+    padding-bottom: 40px;
+  }
+  #project .wrp .title {
+    font-size: 25px;
+  }
+  #project .wrp .title .icon {
+    width: 60px;
+    height: 60px;
   }
 }/*# sourceMappingURL=css_rwd.css.map */

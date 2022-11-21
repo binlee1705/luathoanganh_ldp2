@@ -5,6 +5,19 @@
   .wrp {
     width: calc((100% - 40px));
   }
+  #profile {
+    .wrp {
+      .left {
+        flex: 1;
+        padding-right: 40px;
+      }
+      .right {
+        .group {
+          height: 760px !important;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 991px) {
@@ -54,7 +67,6 @@
       }
     }
   }
-
   #promise {
     .wrp {
       .group {
@@ -68,7 +80,6 @@
       }
     }
   }
-
   #contact {
     .wrp {
       .right {
@@ -93,6 +104,18 @@
               }
             }
           }
+        }
+      }
+    }
+  }
+  #profile {
+    .wrp {
+      .left {
+        padding-right: 20px;
+      }
+      .right {
+        .group {
+          height: 530px !important;
         }
       }
     }
@@ -264,7 +287,62 @@
       }
     }
   }
+  #profile {
+    .wrp {
+      .right {
+        .group {
+          height: 600px !important;
+        }
+      }
+    }
+  }
 }
-
 @media (max-width: 479px) {
+  #profile {
+    padding: 50px 0;
+    .wrp {
+      .title {
+        font-size: 25px;
+        height: 100px;
+      }
+      .content {
+        flex-direction: column;
+        .left {
+          width: 100%;
+          padding: 0;
+          flex: none;
+          margin-bottom: 30px;
+          .btnDownloadProfile {
+            margin-top: 30px;
+            font-size: 20px;
+            padding: 12px 0;
+            .icon {
+              img {
+                height: 24px;
+              }
+            }
+          }
+        }
+        .right {
+          width: 100%;
+          .group {
+            height: 600px !important;
+          }
+        }
+      }
+    }
+  }
+  #project {
+    padding-top: 30px;
+    .wrp {
+      padding-bottom: 40px;
+      .title {
+        font-size: 25px;
+        .icon {
+          width: 60px;
+          height: 60px;
+        }
+      }
+    }
+  }
 }
