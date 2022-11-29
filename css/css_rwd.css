@@ -193,11 +193,14 @@
     width: calc(100% - 40px);
   }
   #footer .wrp .left {
-    width: 40%;
+    width: 37%;
     padding-right: 30px;
   }
   #footer .wrp .right .group .nameCate {
     font-size: 15px;
+  }
+  #footer .wrp .right .group:last-child {
+    padding-right: 0;
   }
 }
 @media (max-width: 991px) {

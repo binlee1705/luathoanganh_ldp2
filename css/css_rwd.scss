@@ -223,13 +223,16 @@
     .wrp {
       width: calc(100% - 40px);
       .left {
-        width: 40%;
+        width: 37%;
         padding-right: 30px;
       }
       .right {
         .group {
           .nameCate {
             font-size: 15px;
+          }
+          &:last-child {
+            padding-right: 0;
           }
         }
       }
